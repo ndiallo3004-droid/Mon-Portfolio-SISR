@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Portfolio - BTS SIO SISR</title>
+  <style>
+    :root{--accent:#1f6feb;--bg:#f6f8fb;--card:#ffffff;--muted:#667085}
+    *{box-sizing:border-box}
+    body{font-family:Inter, system-ui, Arial, sans-serif;margin:0;background:var(--bg);color:#0f1724}
+    header{background:linear-gradient(90deg, #0ea5e9 0%, #7c3aed 100%);color:white;padding:20px}
+    .container{max-width:1100px;margin:24px auto;padding:0 16px}
+    nav{display:flex;gap:12px;align-items:center;justify-content:space-between}
+    .brand{font-weight:700;font-size:18px}
+    .menu{display:flex;gap:10px}
+    .menu a{color:white;text-decoration:none;padding:8px 10px;border-radius:8px;background:rgba(255,255,255,0.08)}
+    main{display:grid;grid-template-columns:1fr 340px;gap:20px}
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(16,24,40,0.06)}
+    h1,h2,h3{margin:0 0 10px}
+    .profile{display:flex;gap:16px;align-items:center}
+    .avatar{width:96px;height:96px;border-radius:12px;background:linear-gradient(135deg,#ffd6a5,#fca5a5);display:flex;align-items:center;justify-content:center;font-weight:700;color:#3b3b3b}
+    .meta small{color:var(--muted)}
+    .skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+    .skill{background:#eef2ff;padding:6px 8px;border-radius:999px;font-size:13px}
+    .list{display:grid;gap:10px}
+    .project{border-left:4px solid var(--accent);padding:12px;border-radius:8px;background:#fbfdff}
+    footer{margin-top:20px;text-align:center;color:var(--muted);font-size:14px}
+    @media(max-width:900px){main{grid-template-columns:1fr} .menu{display:none}}
+    .btn{display:inline-block;padding:8px 12px;border-radius:10px;text-decoration:none;background:var(--accent);color:white}
+    .small-note{font-size:13px;color:var(--muted)}
+    .link-list a{display:block;color:var(--accent);text-decoration:none}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="brand">Portfolio — BTS SIO SISR</div>
+        <div class="menu">
+          <a href="#accueil">Accueil</a>
+          <a href="#cv">CV</a>
+          <a href="#competences">Compétences</a>
+          <a href="#veille">Veille</a>
+          <a href="#E5">E5</a>
+          <a href="#E6">E6</a>
+          <a href="#E7">E7</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <main>
+      <section>
+        <article id="accueil" class="card">
+          <div class="profile">
+            <div class="avatar">Prénom</div>
+            <div class="meta">
+              <h1>Ton Nom Complet</h1>
+              <div class="small-note">Étudiante 2ᵉ année BTS SIO — option SISR • Établissement • Année scolaire</div>
+              <p style="margin-top:8px">Court pitch (1–2 lignes) : objectif professionnel, spécialisation réseau/systèmes, forces.</p>
+              <p><a class="btn" href="#cv">Télécharger mon CV (PDF)</a></p>
+            </div>
+          </div>
+        </article>
+
+        <article id="competences" class="card" style="margin-top:16px">
+          <h2>Compétences</h2>
+          <div class="skills">
+            <div class="skill">Administration Windows Server</div>
+            <div class="skill">Linux (Debian/Ubuntu)</div>
+            <div class="skill">Réseaux TCP/IP</div>
+            <div class="skill">Virtualisation (VMware, VirtualBox)</div>
+            <div class="skill">Scripts : Bash / PowerShell</div>
+            <div class="skill">Sécurité : Hardening, Firewall</div>
+            <div class="skill">GLPI / OCS</div>
+            <div class="skill">Sauvegardes & PRA</div>
+            <div class="skill">SQL / Bases de données</div>
+          </div>
+
+          <h3 style="margin-top:14px">Compétences transverses</h3>
+          <ul>
+            <li>Travail en équipe, communication</li>
+            <li>Rédaction de procédures et rapports</li>
+            <li>Gestion de projet (méthode agile / Scrum légère)</li>
+            <li>Organisation et priorisation</li>
+          </ul>
+
+          <h3 style="margin-top:12px">Bilan personnel</h3>
+          <p class="small-note">Tu peux ici expliquer brièvement les difficultés rencontrées en 1ʳᵉ année et comment tu les as surmontées.</p>
+        </article>
+
+        <article id="veille" class="card" style="margin-top:16px">
+          <h2>Veille technologique</h2>
+          <p class="small-note">Thèmes suivis : virtualisation, sécurité (E7), orchestration, cloud...</p>
+          <div class="list">
+            <div class="project">
+              <h3>Veille #1 — Titre</h3>
+              <p>Résumé court.</p>
+              <div class="small-note">Date : 2025-11-15 • Sources : lien1, lien2</div>
+            </div>
+            <div class="project">
+              <h3>Veille #2 — Titre</h3>
+              <p>Résumé court.</p>
+            </div>
+          </div>
+        </article>
+
+        <article id="E5" class="card" style="margin-top:16px">
+          <h2>E5 — Stages & Projet</h2>
+          <p class="small-note">Ajoute : contexte, tâches réalisées, compétences, preuves.</p>
+          <div class="list">
+            <div class="project">
+              <h3>Stage 1 — Nom de l'entreprise</h3>
+              <ul>
+                <li>Contexte</li>
+                <li>Tâches</li>
+                <li>Compétences</li>
+                <li>Preuves : <a href="#">rapport_stage1.pdf</a></li>
+              </ul>
+            </div>
+            <div class="project">
+              <h3>Projet tutoré — Sujet</h3>
+              <ul>
+                <li>Rôle : ...</li>
+                <li>Livrables : ...</li>
+                <li>Preuves : <a href="#">dossier_projet.pdf</a></li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article id="E6" class="card" style="margin-top:16px">
+          <h2>E6 — Projets (Blocs 2)</h2>
+          <div class="list">
+            <div class="project">
+              <h3>Projet A — Sujet</h3>
+              <p>Contexte, tâches et preuves.</p>
+            </div>
+          </div>
+        </article>
+
+        <article id="E7" class="card" style="margin-top:16px">
+          <h2>E7 — Cybersécurité</h2>
+          <p class="small-note">Ajoute ici tes fiches E7.</p>
+          <ul>
+            <li>Analyse de risque</li>
+            <li>Durcissement</li>
+            <li>Tests</li>
+          </ul>
+        </article>
+
+      </section>
+
+      <aside>
+        <div class="card" id="cv">
+          <h2>CV</h2>
+          <p class="small-note">Télécharge ton CV.</p>
+          <p><a href="assets/pdf/cv.pdf" class="link">Télécharger CV</a></p>
+
+          <h3 style="margin-top:12px">Contact</h3>
+          <p class="small-note">Email : ton.email@exemple.com<br>Téléphone : 06 00 00 00 00</p>
+        </div>
+
+        <div class="card" style="margin-top:16px">
+          <h3>Liens rapides</h3>
+          <div class="link-list">
+            <a href="#E5">→ E5 : Stages & Projet</a>
+            <a href="#E6">→ E6 : Projets</a>
+            <a href="#E7">→ E7 : Cybersécurité</a>
+            <a href="#veille">→ Veille technologique</a>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:16px">
+          <h3>Checklist</h3>
+          <ul>
+            <li>PDF attachés</li>
+            <li>Captures ajoutées</li>
+            <li>CV à jour</li>
+            <li>Page E7 prête</li>
+          </ul>
+        </div>
+      </aside>
+    </main>
+  </div>
+</body>
+</html>
